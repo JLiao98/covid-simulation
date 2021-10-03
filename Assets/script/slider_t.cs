@@ -30,7 +30,7 @@ public class slider_t : MonoBehaviour
         pText.text = p.ToString();
         
         // Let's say mask have 15% protection rate, 2 % / 15 % = 13 %
-        rText.text = mask.isOn ? (2 * p).ToString().Substring(0,3) + " %" : (13 * p).ToString().Substring(0,3) + " %";
+        rText.text = mask.isOn ? (2 * p).ToString().Substring(0,4) + " %" : (13 * p).ToString().Substring(0,4) + " %";
     }
 
     double combine_distribution(double x, double y)
